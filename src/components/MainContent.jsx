@@ -1059,25 +1059,7 @@ const MainContent = ({ isMusicPlaying, onToggleMusic }) => {
                                         }}>
                                             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px', alignItems: 'center' }}>
                                                 <strong style={{ color: '#7d1e1e', fontFamily: "'Cormorant Garamond', serif", fontSize: '18px' }}>{wish.name}</strong>
-
-                                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                                    <span style={{ fontSize: '12px', color: '#888', fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic' }}>{getTimeAgo(wish.date)}</span>
-                                                    <button
-                                                        onClick={() => handleDeleteWish(index)}
-                                                        style={{
-                                                            background: 'none',
-                                                            border: 'none',
-                                                            color: '#ff4d4f',
-                                                            cursor: 'pointer',
-                                                            fontSize: '18px',
-                                                            lineHeight: '1',
-                                                            padding: 0
-                                                        }}
-                                                        title="Hapus Komentar"
-                                                    >
-                                                        &times;
-                                                    </button>
-                                                </div>
+                                                <span style={{ fontSize: '12px', color: '#888', fontFamily: "'Cormorant Garamond', serif", fontStyle: 'italic' }}>{getTimeAgo(wish.date)}</span>
                                             </div>
 
                                             {/* Status Text Sederhana */}
