@@ -1137,20 +1137,20 @@ const MainContent = ({ isMusicPlaying, onToggleMusic }) => {
                 <button
                     onClick={onToggleMusic}
                     style={{
-                        position: 'absolute',
-                        top: isMobile ? '15px' : '20px',
-                        right: isMobile ? '15px' : '20px',
-                        width: isMobile ? '45px' : '50px',
-                        height: isMobile ? '45px' : '50px',
+                        position: 'fixed',
+                        bottom: isMobile ? '90px' : '30px', // Above bottom navbar on mobile
+                        right: isMobile ? '20px' : '30px',
+                        width: isMobile ? '40px' : '50px',
+                        height: isMobile ? '40px' : '50px',
                         borderRadius: '50%',
                         backgroundColor: '#d97706',
-                        border: 'none',
+                        border: '2px solid #fff',
                         cursor: 'pointer',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        boxShadow: '0 4px 12px rgba(217, 119, 6, 0.5)',
-                        zIndex: 50,
+                        boxShadow: '0 4px 15px rgba(0,0,0,0.3)',
+                        zIndex: 9999, // Ensure on top of everything
                     }}
                 >
                     {isMusicPlaying ? (
